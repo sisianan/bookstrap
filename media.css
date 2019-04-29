@@ -1,0 +1,72 @@
+@media only screen and (max-width:1200px){
+    div.nav-content ul li:nth-of-type(2){
+        display: none;
+    }
+    div.section div.content ul.img li{
+        width: 33.33%;
+    }
+    div.nav-content{
+        width: auto;
+    }
+    div.header div.header-content{
+        width: auto;
+    }
+    div.section div.content{
+        width: 970px;
+    }
+}
+@media only screen and (max-width:990px){
+    div.nav-content ul:nth-of-type(2) li:nth-last-of-type(1){
+        display: none;
+    }
+    div.nav-content ul:nth-of-type(1) li:nth-of-type(1){
+        display: none;
+    }
+    div.section div.content ul.img li{
+        width: 50%;
+    }
+    div.header div.header-content h1{
+        font-size: 90px;
+    }
+    div.header div.header-content h2{
+        font-size: 24px;
+    }
+    div.section div.content{
+        width: 750px;
+    }
+    
+}
+@media only screen and (max-width:770px){
+    div.section div.content{
+        width: auto;
+    }
+    div.section div.content div.text h2{
+        font-size: 30px;
+    }
+    div.section div.content ul.img{
+         width:310px;
+         margin: 0 auto;
+    }
+    div.section div.content ul.img li{
+        width: 100%;
+        box-sizing: content-box;
+    }
+    div.header div.header-content h1{
+        font-size: 60px;
+    }
+    div.header div.header-content h2{
+        font-size: 18px;
+    }
+    div.nav-content ul:nth-of-type(1) li:not(:nth-of-type(1)){
+        display: none;
+    }
+    div.nav-content ul:nth-of-type(1) li:nth-of-type(1){
+        display: block;
+    }
+    div.nav-content{
+        width: 100%;
+    }
+    div.hidden{
+        display: block;
+    }
+}

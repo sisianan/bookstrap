@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: #9d9d9d;
+}
+div.all>div{
+    width: 100%;
+}
+div.nav{
+    position: fixed;
+    background: #222;
+     min-height: 40px;
+     top: 0;
+     left: 0;
+     z-index: 12;  
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+div.nav-content{
+    width: 1170px;
+    margin: 0 auto;
+}
+div.nav-content::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+div.nav-content ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div.nav-content ul li{
+    padding: 0 15px;
+}
+div.nav-content ul.left{
+    float: left;
+}
+li.circle{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+li.circle::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(238, 51, 51);
+    border-radius: 50%;
+    top: 5px;
+    left: 70px;
+}
+div.nav-content ul li a{
+    line-height: 40px;
+    transition: color 0.2s;
+}
+div.nav-content ul.left li:nth-of-type(1) a{
+    font-size: 18px;
+}
+div.nav-content ul.right{
+    margin-left: 100px;
+    float: right;
+}
+div.nav-content ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+div.hidden-ul ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+div.hidden{
+    display: none;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 5px 30px;
+    
+}
+div.hidden>div{
+    display: inline-block;
+    padding: 10px 10px 5px 10px;
+    
+}
+div.hidden>div div{
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    margin: 3.5px 0;    
+}
+div.hidden:hover{
+    background: rgb(78, 77, 77);
+}
+div.header{
+  
+    position: relative;
+    padding: 90px 0 110px;
+    background: linear-gradient(45deg,#020031 0,#6d3353 100%);
+}
+div.header div.header-content{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+div.header div.header-content h1{
+    font-size: 100px;
+}
+div.header div.header-content h2{
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+div.header div.header-content div.btn{
+    margin-top: 30px;
+}
+div.header div.header-content div.btn a{
+    display: inline-block;
+    padding: 13px 35px 17px;
+    background: #337ab7;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400px;
+    border-radius: 6px;
+    box-shadow: 0 4px 0 #2a6496;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+div.header div.header-content div.btn a:hover{
+    background-color: #2084db;
+}
+div.header div.header-content>p{
+    margin-top: 15px;
+}
+div.header div.header-content>p a{
+    transition: all .2s;
+}
+div.header div.header-content>p a:hover{
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+div.hidden-ul{
+    position: fixed;
+    top: 0;
+    transform: translateY(-251px);
+    border-top: 1px solid rgb(77, 75, 75);
+    padding: 15px;
+    background: #222;
+    z-index: 11;
+    transition: all .5s;
+   
+}
+div.hidden-ul li{
+    padding: 10px 0;
+}
+div.hidden-ul li.circle::after{
+    left: auto;
+    right: 0;
+}
+div.hidden-ul li a{
+    transition: all .2s;
+}
+div.header-foot{
+  
+    background-color: #f5f5f5;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} 
+div.header-foot ul{
+    display: flex;
+    align-items: center;
+    
+}
+div.header-foot ul li a{
+    display: flex;
+    align-items: center;
+    color: #222;
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+div.header-foot ul li a i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.header-foot ul li:nth-of-type(1) a i{
+    background-image: url(bootone.png);
+   
+}
+div.header-foot ul li:nth-of-type(2) a::before{
+    content: '|';
+    display: inline;
+    padding: 0 10px;
+} 
+div.header-foot ul li:nth-of-type(2) a i{
+    width: 22px;
+    height: 20px;
+    background-image: url(boottwo.png);
+}
+div.header-foot ul li:nth-of-type(1) a:hover span{
+    text-decoration: underline;
+}
+div.header-foot ul li:nth-of-type(2) a:hover span{
+    color: rgb(247, 8, 8);
+    text-decoration: underline;
+}
+
+
+
+
+div.section div.content{
+    margin: 0 auto;
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+div.section div.content div.text{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;  
+    border-bottom: 1px solid #eee;
+}
+div.section div.content div.text h2{
+    font-size: 42px;
+    font-weight: 200;
+}
+div.section div.content div.text p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+div.section div.content ul.img::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+div.section div.content ul.img li{
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+div.section div.content ul.img li>div{
+    padding: 5px;
+    border: 1px solid #eee;
+}
+div.section div.content ul.img li>div img{
+    width: 100%;
+}
+div.section div.content ul.img li>div div.img-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    height: 200px;
+    color: #555;
+    padding: 5px;
+}
+div.section div.content ul.img li>div div.img-content a{
+    text-align: center;
+    color: #337ab7;
+    margin: 10px 0;
+}
+div.section div.content ul.img li>div div.img-content a span:nth-of-type(1){
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+div.section div.content ul.img li>div div.img-content a span:nth-of-type(2){
+    font-size: 16px;
+}
+div.section div.content ul.img li>div div.img-content p{
+    text-align: center;
+}
